@@ -6,15 +6,8 @@
 
 <style>
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -45,6 +38,20 @@ html {
   background-color: #3b8070;
 }
 
+.button--blue {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #4074ee;
+  color: #4074ef;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button--blue:hover {
+  color: #fff;
+  background-color: #4074ef;
+}
+
 .button--grey {
   display: inline-block;
   border-radius: 4px;
@@ -52,7 +59,6 @@ html {
   color: #35495e;
   text-decoration: none;
   padding: 10px 30px;
-  margin-left: 15px;
 }
 
 .button--grey:hover {
