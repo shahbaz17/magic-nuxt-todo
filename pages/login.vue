@@ -37,10 +37,10 @@ export default {
     async userLogin() {
       try {
         const m = new Magic(process.env.NUXT_ENV_MAGIC_PUBLISHABLE_KEY)
-        // let token = await m.auth.loginWithMagicLink({ email: this.email })
         await m.auth.loginWithMagicLink({ email: this.email })
+
         let token = await m.user.getIdToken(60 * 60 * 24 * 7) // 7 days, equal to the Magic login
-        // console.log(token)
+
         if (token) {
           await this.$auth.loginWith('local', {
             data: { token: token },
